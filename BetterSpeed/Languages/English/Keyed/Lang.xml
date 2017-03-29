@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <moveSpeed_title>Movement speed</moveSpeed_title>
+    <doorSpeed_title>Door opening speed</doorSpeed_title>
+    <cooldownSpeed_title>Shooting speed</cooldownSpeed_title>
+    <projectileSpeed_title>Projectile speed</projectileSpeed_title>
+    <carrySpeedPenalty_title>Carry penalty </carrySpeedPenalty_title>
+    <moveSpeed_desc>Movement speed</moveSpeed_desc>
+    <doorSpeed_desc>Doors open x times as faster than normal. (allows decimal points)</doorSpeed_desc>
+    <cooldownSpeed_desc>Ranged weapon warmup and cooldown is x times faster than normal. (allows decimal points)</cooldownSpeed_desc>
+    <projectileSpeed_desc>Projectiles fly x times faster than normal. (allows decimal points)</projectileSpeed_desc>
+    <carrySpeedPenalty_desc>Pawns will be slower when they carry things. 0 = no penalty, 1 = half speed when fully loaded, etc. (allows decimal points)</carrySpeedPenalty_desc>
+</LanguageData>

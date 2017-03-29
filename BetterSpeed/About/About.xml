@@ -1,12 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>BetterSpeed</name>
+  <name>Better Speed</name>
   <targetVersion>0.16.1393</targetVersion>
   <author>Fumblesneeze</author>
   <url>https://github.com/Fumblesneeze/RimBetterSpeed</url>
-  <description>
-Put Description here.
+  <description>Tweaks speed settings globally and adds a new carry weight penalty mechanic:
 
-https://github.com/Fumblesneeze/RimBetterSpeed
-  </description>
+- Pawns will walk slower the more they carry
+- Pawns generally walk faster
+- Pawns generally shoot faster
+- Doors generally open faster
+
+All the settings are customizable in the game using the mod settings.
+
+Requires HugsLib to be installed and loaded previously.
+
+Made using Harmony.
+
+Icon 'Stopwatch' By Gregor Cresnar (The Noun Project)</description>
 </ModMetaData>

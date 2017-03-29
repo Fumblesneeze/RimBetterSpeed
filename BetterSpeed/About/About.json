@@ -1,21 +1,22 @@
 {
-    "id": "BetterSpeed",
-    "name": "BetterSpeed",
-    "version": "0.0.1",
-    "targetGameVersion": "0.16.1393",
-    "authors": "Fumblesneeze",
-    "description": "",
-    "preview": "",
-    "homePage": "https://github.com/Fumblesneeze/RimBetterSpeed",
-    "category": "Content",
-    "source": {
-    },
-    "relationships": {
-        "requires": [
-        "HugsLib"
-        ]
-    },
-    "support": "",
-    "created": "2017-03-29T17:15:03.0218191+02:00",
-    "changeLog": "Initial Version"
+  "id": "BetterSpeed",
+  "name": "Better Speed",
+  "version": "0.0.1",
+  "targetGameVersion": "0.16.1393",
+  "authors": "Fumblesneeze",
+  "description": "Tweaks speed settings globally and adds a new carry weight penalty mechanic:\r\n\r\n- Pawns will walk slower the more they carry\r\n- Pawns generally walk faster\r\n- Pawns generally shoot faster\r\n- Doors generally open faster\r\n\r\nAll the settings are customizable in the game using the mod settings.\r\n\r\nRequires HugsLib to be installed and loaded previously.\r\n\r\nMade using Harmony.\r\n\r\nIcon 'Stopwatch' By Gregor Cresnar (The Noun Project)",
+  "shortDescription": "Tweaks various speed settings in the game like walking, carrying or shooting.",
+  "preview": "http://github.com/Fumblesneeze/RimBetterSpeed/blob/master/BetterSpeed/About/Preview.png?raw=true",
+  "homePage": "https://github.com/Fumblesneeze/RimBetterSpeed",
+  "issues": "https://github.com/Fumblesneeze/RimBetterSpeed/Issues",
+  "category": "Content",
+  "source": {},
+  "relationships": {
+    "requires": [
+      "HugsLib"
+    ]
+  },
+  "support": "",
+  "created": "2017-03-29T17:15:03.0218191+02:00",
+  "changeLog": "Initial Version"
 }
