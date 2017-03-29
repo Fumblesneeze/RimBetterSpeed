@@ -1,2 +1,5 @@
-# RimBetterSpeed
-New Rimworld mod created using ROMM Mod Creator.
+### BetterSpeed ###
+
+Requires HugsLib.
+
+Enter your description here.

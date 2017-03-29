@@ -1,0 +1,21 @@
+{
+    "id": "BetterSpeed",
+    "name": "BetterSpeed",
+    "version": "0.0.1",
+    "targetGameVersion": "0.16.1393",
+    "authors": "Fumblesneeze",
+    "description": "",
+    "preview": "",
+    "homePage": "https://github.com/Fumblesneeze/RimBetterSpeed",
+    "category": "Content",
+    "source": {
+    },
+    "relationships": {
+        "requires": [
+        "HugsLib"
+        ]
+    },
+    "support": "",
+    "created": "2017-03-29T17:15:03.0218191+02:00",
+    "changeLog": "Initial Version"
+}
