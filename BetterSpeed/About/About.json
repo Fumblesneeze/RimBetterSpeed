@@ -9,7 +9,7 @@
   "preview": "http://github.com/Fumblesneeze/RimBetterSpeed/blob/master/BetterSpeed/About/Preview.png?raw=true",
   "homePage": "https://github.com/Fumblesneeze/RimBetterSpeed",
   "issues": "https://github.com/Fumblesneeze/RimBetterSpeed/Issues",
-  "category": "Content",
+  "category": "Gameplay",
   "source": {
     "github": "https://github.com/Fumblesneeze/RimBetterSpeed/releases/download/v0.0.1/BetterSpeed.zip",
     "steam": "894046543"
@@ -19,7 +19,7 @@
       "HugsLib"
     ]
   },
-  "support": "",
+  "support": "https://www.patreon.com/schweigert",
   "created": "2017-03-29T17:15:03.0218191+02:00",
   "changeLog": "Initial Version"
 }
