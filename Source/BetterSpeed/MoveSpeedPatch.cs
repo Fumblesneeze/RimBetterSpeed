@@ -34,10 +34,17 @@ namespace BetterSpeed
                 carryingMass = carriedThing.GetInnerIfMinified().GetStatValue(StatDefOf.Mass, false);
             }
 
-            var carryingCount = (float)__instance.carryTracker.GetInnerContainer().TotalStackCount;
+            var carryingCount = (float)__instance.carryTracker.innerContainer.TotalStackCount;
 
-
-            var massPercent = (MassUtility.GearAndInventoryMass(__instance) + carryingMass * carryingCount) / MassUtility.Capacity(__instance);
+            float massPercent;
+            if (!__instance.RaceProps.Animal)
+            {
+                massPercent = (MassUtility.GearAndInventoryMass(__instance) + carryingMass * carryingCount) / MassUtility.Capacity(__instance);
+            }
+            else
+            {
+                massPercent = .5f;
+            }
 
             c *= (1 + massPercent) * _carrymodifier;
 

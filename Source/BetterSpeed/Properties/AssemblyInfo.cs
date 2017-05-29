@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die mit einer Assembly verknüpft sind.
 [assembly: AssemblyTitle("Better Speed")]
-[assembly: AssemblyDescription("Tweaks speed settings globally and adds a new carry weight penalty mechanic:\r\n\r\n- Pawns will walk slower the more they carry\r\n- Pawns generally walk faster\r\n- Pawns generally shoot faster\r\n- Doors generally open faster\r\n\r\nAll the settings are customizable in the game using the mod settings.\r\n\r\nRequires HugsLib to be installed and loaded previously.\r\n\r\nMade using Harmony.\r\n\r\nIcon 'Stopwatch' By Gregor Cresnar (The Noun Project)")]
+[assembly: AssemblyDescription("Tweaks speed settings globally and adds a new carry weight penalty mechanic:\r\n\r\n- Pawns generally walk faster\r\n- Pawns generally shoot faster\r\n- Doors generally open faster\r\n- Carrying stuff will slow pawns down\r\n\r\nUpdate 1:\r\n- A17 update\r\n- Animals will have half of the carry penalty applied to them at all times\r\n\r\nAll the settings are customizable in the game using the mod settings.\r\n\r\nRequires HugsLib to be installed and loaded previously.\r\n\r\nMade using Harmony.\r\n\r\nIcon 'Stopwatch' By Gregor Cresnar (The Noun Project)")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Better Speed")]
@@ -31,6 +31,6 @@ using System.Runtime.InteropServices;
 //
 // Sie können alle Werte angeben oder die standardmäßigen Build- und Revisionsnummern 
 // übernehmen, indem Sie "*" eingeben:
-// [assembly: AssemblyVersion("0.0.1.0")]
-[assembly: AssemblyVersion("0.0.1.0")]
-[assembly: AssemblyFileVersion("0.0.1.0")]
+// [assembly: AssemblyVersion("0.0.2.0")]
+[assembly: AssemblyVersion("0.0.2.0")]
+[assembly: AssemblyFileVersion("0.0.2.0")]

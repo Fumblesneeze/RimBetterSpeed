@@ -1,15 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Better Speed</name>
-  <targetVersion>0.16.1393</targetVersion>
+  <targetVersion>0.17.0</targetVersion>
   <author>Fumblesneeze</author>
   <url>https://github.com/Fumblesneeze/RimBetterSpeed</url>
   <description>Tweaks speed settings globally and adds a new carry weight penalty mechanic:
 
-- Pawns will walk slower the more they carry
 - Pawns generally walk faster
 - Pawns generally shoot faster
 - Doors generally open faster
+- Carrying stuff will slow pawns down
+
+Update 1:
+- A17 update
+- Animals will have half of the carry penalty applied to them at all times
 
 All the settings are customizable in the game using the mod settings.
 
