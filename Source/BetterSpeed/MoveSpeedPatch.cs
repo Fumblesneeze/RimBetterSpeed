@@ -23,7 +23,7 @@ namespace BetterSpeed
 
             // undo carry pawn modifier
             if (__instance.carryTracker?.CarriedThing?.def.category == ThingCategory.Pawn)
-                c /= 100f;
+                c /= 0.6f;
 
             // add our own modifiers
 
