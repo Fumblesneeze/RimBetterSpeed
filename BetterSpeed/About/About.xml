@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Better Speed</name>
-  <targetVersion>0.17.0</targetVersion>
+  <targetVersion>0.18.0</targetVersion>
   <author>Fumblesneeze</author>
   <url>https://github.com/Fumblesneeze/RimBetterSpeed</url>
   <description>Tweaks speed settings globally and adds a new carry weight penalty mechanic:
@@ -10,6 +10,12 @@
 - Pawns generally shoot faster
 - Doors generally open faster
 - Carrying stuff will slow pawns down
+
+Update 3:
+- B18 Update
+
+Update 2:
+- Fix Flash to the Rescue! bug
 
 Update 1:
 - A17 update
