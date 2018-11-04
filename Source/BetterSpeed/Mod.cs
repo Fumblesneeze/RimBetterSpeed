@@ -30,11 +30,11 @@ namespace BetterSpeed
 
         public override void DefsLoaded()
         {
-            moveSpeed = Settings.GetHandle("moveSpeed", "moveSpeed_title".Translate(), "moveSpeed_desc".Translate(), 6f);
-            doorSpeed = Settings.GetHandle("doorSpeed", "doorSpeed_title".Translate(), "doorSpeed_desc".Translate(), 3f);
+            moveSpeed = Settings.GetHandle("moveSpeed", "moveSpeed_title".Translate(), "moveSpeed_desc".Translate(), 2f);
+            doorSpeed = Settings.GetHandle("doorSpeed", "doorSpeed_title".Translate(), "doorSpeed_desc".Translate(), 2f);
             projectileSpeed = Settings.GetHandle("projectileSpeed", "projectileSpeed_title".Translate(), "projectileSpeed_desc".Translate(), 2f);
-            cooldownSpeed = Settings.GetHandle("cooldownSpeed", "cooldownSpeed_title".Translate(), "cooldownSpeed_desc".Translate(), 3f);
-            carrySpeedPenalty = Settings.GetHandle("carrySpeedPenalty", "carrySpeedPenalty_title".Translate(), "carrySpeedPenalty_desc".Translate(), 3f);
+            cooldownSpeed = Settings.GetHandle("cooldownSpeed", "cooldownSpeed_title".Translate(), "cooldownSpeed_desc".Translate(), 2f);
+            carrySpeedPenalty = Settings.GetHandle("carrySpeedPenalty", "carrySpeedPenalty_title".Translate(), "carrySpeedPenalty_desc".Translate(), 0.75f);
 
             SettingsChanged();
         }

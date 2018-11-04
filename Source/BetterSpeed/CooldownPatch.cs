@@ -14,9 +14,9 @@ namespace BetterSpeed
     {
         public static float _modifier = 2;
 
-        public static void Postfix(object equipment, VerbProperties __instance, ref int __result)
+        public static void Postfix(VerbProperties __instance, ref int __result)
         {
-            if(equipment != null && !__instance.MeleeRange)
+            if(!__instance.IsMeleeAttack)
                 __result = Mathf.RoundToInt(__result / _modifier);
         }
     }
