@@ -21,32 +21,32 @@ namespace BetterSpeed
         {
             var c = (float)__result;
 
-            // undo carry pawn modifier
-            if (__instance.carryTracker?.CarriedThing?.def.category == ThingCategory.Pawn)
-                c /= 0.6f;
 
             // add our own modifiers
+            var mass = MassUtility.GearAndInventoryMass(__instance);
 
-            var carriedThing = __instance.carryTracker.CarriedThing;
-            var carryingMass = 1f;
-            if (carriedThing != null)
+
+            var thing = __instance.carryTracker.CarriedThing;
+            if (thing != null)
             {
-                carryingMass = carriedThing.GetInnerIfMinified().GetStatValue(StatDefOf.Mass, false);
+                mass += thing.stackCount * thing.GetStatValue(StatDefOf.Mass);
+                if (thing is Pawn p)
+                {
+                    mass += MassUtility.GearAndInventoryMass(p);
+
+
+                    // undo carry pawn modifier
+                    if(_carrymodifier > 0f)
+                        c *= 1.666f;
+                }
             }
 
-            var carryingCount = (float)__instance.carryTracker.innerContainer.TotalStackCount;
+            var capacity = __instance.BodySize * MassUtility.MassCapacityPerBodySize;
+            var encumbrance = mass / capacity;
 
-            float massPercent;
-            if (!__instance.RaceProps.Animal)
-            {
-                massPercent = (MassUtility.GearAndInventoryMass(__instance) + carryingMass * carryingCount) / MassUtility.Capacity(__instance);
-            }
-            else
-            {
-                massPercent = .5f;
-            }
+            var modifier = 1 + (encumbrance * _carrymodifier);
 
-            c *= (1 + massPercent) * _carrymodifier;
+            c *= modifier;
 
             __result = Mathf.Clamp(Mathf.RoundToInt(c / _modifier), 1, 450);
         }

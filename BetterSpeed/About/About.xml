@@ -1,15 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Better Speed</name>
-  <targetVersion>0.18.0</targetVersion>
   <author>Fumblesneeze</author>
   <url>https://github.com/Fumblesneeze/RimBetterSpeed</url>
-  <description>Tweaks speed settings globally and adds a new carry weight penalty mechanic:
+  <supportedVersions>
+    <li>1.0</li>
+  </supportedVersions>
+  <description>Tweaks speed settings globally (which means for everyone, not just your colonists!) and adds a new carry weight penalty mechanic:
 
 - Pawns generally walk faster
 - Pawns generally shoot faster
 - Doors generally open faster
 - Carrying stuff will slow pawns down
+
+Update 4:
+-1.0 Update
+-Fixed how mass is calculated
 
 Update 3:
 - B18 Update
