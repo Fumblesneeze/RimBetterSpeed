@@ -14,12 +14,12 @@
   "category": "Gameplay",
   "source": {
     "github": "https://github.com/Fumblesneeze/RimBetterSpeed/releases/download/v0.0.4/BetterSpeed.zip",
-    "steam": "894046543"
+    "steam": "1556062106"
   },
   "relationships": {
     "requires": "HugsLib"
   },
   "support": "https://www.patreon.com/schweigert",
-  "created": "2019-10-31T03:19:19.8781502+01:00",
+  "created": "2019-10-31T03:26:50.9555162+01:00",
   "changeLog": "1.0 Update"
 }
