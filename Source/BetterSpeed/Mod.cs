@@ -1,4 +1,4 @@
-using Harmony;
+using HarmonyLib;
 using HugsLib;
 using HugsLib.Settings;
 using RimWorld;
@@ -14,12 +14,12 @@ namespace BetterSpeed
 {
     public class Mod : ModBase
     {
-        public override string ModIdentifier { get; } = "BetterSpeed";
+        public override string ModIdentifier { get; } = "Fumble.BetterSpeed";
 
         public override void Initialize()
         {
-            var harmony = HarmonyInstance.Create("Fumblesneeze.BetterSpeed");
-            harmony.PatchAll(Assembly.GetExecutingAssembly());
+            var harmony = new Harmony("Fumble.BetterSpeed");
+            harmony.PatchAll();
         }
 
         private SettingHandle<float> moveSpeed;
@@ -30,11 +30,11 @@ namespace BetterSpeed
 
         public override void DefsLoaded()
         {
-            moveSpeed = Settings.GetHandle("moveSpeed", "moveSpeed_title".Translate(), "moveSpeed_desc".Translate(), 2.5f);
+            moveSpeed = Settings.GetHandle("moveSpeed", "moveSpeed_title".Translate(), "moveSpeed_desc".Translate(), 2f);
             doorSpeed = Settings.GetHandle("doorSpeed", "doorSpeed_title".Translate(), "doorSpeed_desc".Translate(), 2f);
-            projectileSpeed = Settings.GetHandle("projectileSpeed", "projectileSpeed_title".Translate(), "projectileSpeed_desc".Translate(), 2f);
-            cooldownSpeed = Settings.GetHandle("cooldownSpeed", "cooldownSpeed_title".Translate(), "cooldownSpeed_desc".Translate(), 2f);
-            carrySpeedPenalty = Settings.GetHandle("carrySpeedPenalty", "carrySpeedPenalty_title".Translate(), "carrySpeedPenalty_desc".Translate(), 2f);
+            projectileSpeed = Settings.GetHandle("projectileSpeed", "projectileSpeed_title".Translate(), "projectileSpeed_desc".Translate(), 1.5f);
+            cooldownSpeed = Settings.GetHandle("cooldownSpeed", "cooldownSpeed_title".Translate(), "cooldownSpeed_desc".Translate(), 1.5f);
+            carrySpeedPenalty = Settings.GetHandle("carrySpeedPenalty", "carrySpeedPenalty_title".Translate(), "carrySpeedPenalty_desc".Translate(), 0.75f);
 
             SettingsChanged();
         }

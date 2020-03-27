@@ -1,4 +1,4 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using RimWorld;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using UnityEngine;
 namespace BetterSpeed
 {
     [HarmonyPatch(typeof(Building_Door))]
-    [HarmonyPatch(nameof(Building_Door.TicksToOpenNow), PropertyMethod.Getter)]
+    [HarmonyPatch(nameof(Building_Door.TicksToOpenNow), MethodType.Getter)]
     public class DoorPatch
     {
         public static float _modifier = 2;

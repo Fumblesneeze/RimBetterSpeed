@@ -1,4 +1,4 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using RimWorld;
 using System;
 using System.Collections.Generic;
@@ -19,7 +19,14 @@ namespace BetterSpeed
         [HarmonyPostfix]
         public static void TicksPerMove(bool diagonal, Pawn __instance, ref int __result)
         {
+            if (_carrymodifier == 0f)
+                return;
             var c = (float)__result;
+
+            var capacity = MassUtility.Capacity(__instance, null);
+
+            if (capacity == 0f)
+                return;
 
 
             // add our own modifiers
@@ -34,14 +41,14 @@ namespace BetterSpeed
                 {
                     mass += MassUtility.GearAndInventoryMass(p);
 
+                    //todo: compatibility with syr individuality?
+                    mass += p.GetStatValue(StatDefOf.Mass, true);
 
                     // undo carry pawn modifier
-                    if(_carrymodifier > 0f)
-                        c *= 1.666f;
+                    c /= 1.666f;
                 }
             }
 
-            var capacity = __instance.BodySize * MassUtility.MassCapacityPerBodySize;
             var encumbrance = mass / capacity;
 
             var modifier = 1 + (encumbrance * _carrymodifier);

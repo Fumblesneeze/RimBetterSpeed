@@ -1,8 +1,9 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Reflection.Emit;
 using System.Text;
 using Verse;
@@ -22,7 +23,7 @@ namespace BetterSpeed
             return source.ReplaceMatchingSequence(
                 new Func<CodeInstruction, bool>[]
                 {
-                    (o => o.operand == field)
+                    (o => (o.operand as FieldInfo) == field)
                 },
                 i => i.Concat(
                     new[]

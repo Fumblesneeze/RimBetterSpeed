@@ -1,17 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Better Speed</name>
+  <packageId>Fumble.BetterSpeed</packageId>
+  <name>[1.1] Better Speed</name>
   <author>Fumblesneeze</author>
   <url>https://github.com/Fumblesneeze/RimBetterSpeed</url>
   <supportedVersions>
-    <li>1.0</li>
+    <li>1.1</li>
   </supportedVersions>
-  <description>Tweaks speed settings globally (which means for everyone, not just your colonists!) and adds a new carry weight penalty mechanic:
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>UnlimitedHugs.HugsLib</li>
+    <li>brrainz.harmony</li>
+    <li>UnlimitedHugs.HugsLib</li>
+  </loadAfter>
+  <description>Tweaks speed settings and adds a new carry weight penalty mechanic to make the game playable on 1x and 2x speeds.
 
-- Pawns generally walk faster
-- Pawns generally shoot faster
-- Doors generally open faster
+- Pawns walk faster
+- Pawns shoot faster
+- Doors open faster
 - Carrying stuff will slow pawns down
+
+Update 5:
+-1.1 Update
+-Fixed how pawn carrying is calculated
 
 Update 4:
 -1.0 Update
