@@ -8,9 +8,10 @@ using Verse;
 
 namespace BetterSpeed
 {
+    [StaticConstructorOnStartup]
     public static class Compatibility_GiddyUp
     {
-        public static void Initialize()
+        static Compatibility_GiddyUp()
         {
             var assembly = AppDomain.CurrentDomain.GetAssemblies().FirstOrDefault(x => x.FullName.Contains("GiddyUpCore"));
             if(assembly != null)

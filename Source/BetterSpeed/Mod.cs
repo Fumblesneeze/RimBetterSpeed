@@ -18,7 +18,6 @@ namespace BetterSpeed
 
         public override void Initialize()
         {
-            Compatibility_GiddyUp.Initialize();
         }
 
 
