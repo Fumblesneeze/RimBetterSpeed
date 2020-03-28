@@ -1,19 +1,19 @@
 {
   "packageId": "Fumble.BetterSpeed",
   "name": "[1.1] Better Speed",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "supportedVersions": [
     "1.1.0"
   ],
   "authors": "Fumblesneeze",
-  "description": "Tweaks speed settings and adds a new carry weight penalty mechanic to make the game playable on 1x and 2x speeds.\r\n\r\n- Pawns walk faster\r\n- Pawns shoot faster\r\n- Doors open faster\r\n- Carrying stuff will slow pawns down\r\n\r\nUpdate 5:\r\n-1.1 Update\r\n-Fixed how pawn carrying is calculated\r\n\r\nUpdate 4:\r\n-1.0 Update\r\n-Fixed how mass is calculated\r\n\r\nUpdate 3:\r\n- B18 Update\r\n\r\nUpdate 2:\r\n- Fix Flash to the Rescue! bug\r\n\r\nUpdate 1:\r\n- A17 update\r\n- Animals will have half of the carry penalty applied to them at all times\r\n\r\nAll the settings are customizable in the game using the mod settings.\r\n\r\nRequires HugsLib to be installed and loaded previously.\r\n\r\nMade using Harmony.\r\n\r\nIcon 'Stopwatch' By Gregor Cresnar (The Noun Project)",
+  "description": "Tweaks speed settings and adds a new carry weight penalty mechanic to make the game playable on 1x and 2x speeds.\r\n\r\n- Pawns walk faster\r\n- Pawns shoot faster\r\n- Doors open faster\r\n- Carrying stuff will slow pawns down\r\n\r\nUpdate 6:\r\n-Compatibility with GiddyUp!\r\n\r\nUpdate 5:\r\n-1.1 Update\r\n-Fixed how pawn carrying is calculated\r\n\r\nUpdate 4:\r\n-1.0 Update\r\n-Fixed how mass is calculated\r\n\r\nUpdate 3:\r\n- B18 Update\r\n\r\nUpdate 2:\r\n- Fix Flash to the Rescue! bug\r\n\r\nUpdate 1:\r\n- A17 update\r\n- Animals will have half of the carry penalty applied to them at all times\r\n\r\nAll the settings are customizable in the game using the mod settings.\r\n\r\nRequires HugsLib to be installed and loaded previously.\r\n\r\nMade using Harmony.\r\n\r\nIcon 'Stopwatch' By Gregor Cresnar (The Noun Project)",
   "shortDescription": "Tweaks various speed settings in the game like walking, carrying or shooting",
   "preview": "http://github.com/Fumblesneeze/RimBetterSpeed/blob/master/BetterSpeed/About/Preview.png?raw=true",
   "homePage": "https://github.com/Fumblesneeze/RimBetterSpeed",
   "issues": "https://github.com/Fumblesneeze/RimBetterSpeed/Issues",
   "category": "Gameplay",
   "source": {
-    "github": "https://github.com/Fumblesneeze/RimBetterSpeed/releases/download/v0.0.5/Fumble.BetterSpeed.zip",
+    "github": "https://github.com/Fumblesneeze/RimBetterSpeed/releases/download/v0.0.6/Fumble.BetterSpeed.zip",
     "steam": "1556062106"
   },
   "relationships": {
@@ -24,9 +24,10 @@
     "after": [
       "brrainz.harmony",
       "UnlimitedHugs.HugsLib"
-    ]
+    ],
+    "compatible": "Roolo.GiddyUpCore"
   },
   "support": "https://www.patreon.com/schweigert",
-  "created": "2020-03-27T15:23:17.0582414+01:00",
-  "changeLog": "1.1 Update"
+  "created": "2020-03-28T14:54:14.4500641+01:00",
+  "changeLog": "GiddyUp Compatibility"
 }

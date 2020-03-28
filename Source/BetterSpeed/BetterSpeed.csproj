@@ -79,6 +79,9 @@
   <ItemGroup>
     <Folder Include="Source-DLLs\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Compatibility_GiddyUp.cs" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>del *.pdb</PostBuildEvent>

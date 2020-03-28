@@ -18,8 +18,12 @@ namespace BetterSpeed
 
         public override void Initialize()
         {
-            var harmony = new Harmony("Fumble.BetterSpeed");
-            harmony.PatchAll();
+            Compatibility_GiddyUp.Initialize();
+        }
+
+
+        public override void MapLoaded(Map map)
+        {
         }
 
         private SettingHandle<float> moveSpeed;

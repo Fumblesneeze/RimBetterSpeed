@@ -23,15 +23,27 @@ namespace BetterSpeed
                 return;
             var c = (float)__result;
 
-            var capacity = MassUtility.Capacity(__instance, null);
-
-            if (capacity == 0f)
+            if(Compatibility_GiddyUp.GetMount(__instance) is Pawn mount)
+            {
+                __result = diagonal ? mount.TicksPerMoveDiagonal : mount.TicksPerMoveCardinal;
                 return;
-
+            }
 
             // add our own modifiers
             var mass = MassUtility.GearAndInventoryMass(__instance);
 
+            if (Compatibility_GiddyUp.GetRider(__instance) is Pawn rider)
+            {
+                mass += MassUtility.GearAndInventoryMass(rider);
+
+                mass += rider.GetStatValue(StatDefOf.Mass, true);
+            }
+
+
+            var capacity = MassUtility.Capacity(__instance, null);
+
+            if (capacity == 0f)
+                return;
 
             var thing = __instance.carryTracker.CarriedThing;
             if (thing != null)
@@ -40,8 +52,7 @@ namespace BetterSpeed
                 if (thing is Pawn p)
                 {
                     mass += MassUtility.GearAndInventoryMass(p);
-
-                    //todo: compatibility with syr individuality?
+                    
                     mass += p.GetStatValue(StatDefOf.Mass, true);
 
                     // undo carry pawn modifier
