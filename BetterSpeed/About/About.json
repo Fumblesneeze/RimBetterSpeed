@@ -1,7 +1,7 @@
 {
   "packageId": "Fumble.BetterSpeed",
   "name": "[1.1] Better Speed",
-  "version": "0.0.6-fix",
+  "version": "0.0.7",
   "supportedVersions": [
     "1.1.0"
   ],
@@ -13,7 +13,7 @@
   "issues": "https://github.com/Fumblesneeze/RimBetterSpeed/Issues",
   "category": "Gameplay",
   "source": {
-    "github": "https://github.com/Fumblesneeze/RimBetterSpeed/releases/download/v0.0.6-fix/Fumble.BetterSpeed.zip",
+    "github": "https://github.com/Fumblesneeze/RimBetterSpeed/releases/download/v0.0.7/Fumble.BetterSpeed.zip",
     "steam": "1556062106"
   },
   "relationships": {
@@ -28,6 +28,6 @@
     "compatible": "Roolo.GiddyUpCore"
   },
   "support": "https://www.patreon.com/schweigert",
-  "created": "2020-03-28T22:06:32.4032926+01:00",
-  "changeLog": "Hotfix"
+  "created": "2020-03-30T12:26:20.2007531+02:00",
+  "changeLog": "Reworked Movespeed modifier to be a statworker"
 }

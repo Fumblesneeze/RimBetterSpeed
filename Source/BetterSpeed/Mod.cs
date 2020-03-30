@@ -44,8 +44,8 @@ namespace BetterSpeed
 
         public override void SettingsChanged()
         {
-            MoveSpeedPatch._modifier = moveSpeed;
-            MoveSpeedPatch._carrymodifier = carrySpeedPenalty;
+            MoveSpeedStatPart._modifier = moveSpeed;
+            MoveSpeedStatPart._carrymodifier = carrySpeedPenalty;
             DoorPatch._modifier = doorSpeed;
             ProjectilePatch._modifier = projectileSpeed;
             CooldownPatch._modifier = cooldownSpeed;

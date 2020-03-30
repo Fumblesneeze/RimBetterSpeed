@@ -72,6 +72,7 @@
     <Compile Include="HarmonyExtension.cs" />
     <Compile Include="Mod.cs" />
     <Compile Include="MoveSpeedPatch.cs" />
+    <Compile Include="MoveSpeedStatPart.cs" />
     <Compile Include="ProjectilePatch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WarmupPatch.cs" />
